@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija</title>
+    <style>
+        /* ovo sam jer tako pise u uputstvu i pravilim prma kojim parim ovaj web a služi da prilagodim boje*/
+:root{
+--glavna-boja: rgb(173, 167, 134); /* ovo sam stavio da jer mi je ova boja glavna pa da je mogu dodati sa --glavna-boja a ne da svaki put pisem adresu ove boje*/
+--boja-teksta-svetla: aliceblue;
+--boja-teksta-tamna: black;
+--futer-bg: rgb(0, 0, 0);
+--futer-tekst: rgb(255, 255, 255);
+--senka-boja: rgb(70, 67, 40);
+}
+/* ovo sam stavio radi fonta da bude u stilu pisace masine */
+.pisacam {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+/* ovo sam otvorio class heder da bi logotip i linkovi bili u istoj ravni */
+.heder
+{
+    display: flex;
+    flex-wrap: wrap; /* ovo sam stavio da mi se stranica ne bi raspala */
+    align-items: center;
+    padding: 20px 5%;
+    box-shadow: 0px 16px 32px var(--glavna-boja);
+}
+/* ovo sam stavio da bi logo veb-sajta bio lijevo */
+.heder a
+{
+    flex: 1;
+}
+/* ovo sam stavio da bi linkovi koji vode o informacija o sajtu bili desno*/
+.heder ul
+{
+    flex: 0.30;
+    display: flex;
+    list-style: none; /* ovo sam stavio da uklonim tacke prije liste radi estetike */
+    flex-wrap: wrap;
+    font-size: x-large;
+    padding: auto;
+    gap: 20px; /* ovo sam stavio da stavke sa liste budu odvojene jedna od druge*/
+    margin: 20px;
+}
+/* ovo sam stavio da linovi nemaju crtispod i da su crni*/
+.heder a{
+text-decoration: none; /* ovo sam stavio da linkovi nemaju crtu ispod i to sam uradio radi estetike sajta*/
+color: var(--boja-teksta-tamna); 
+}
+/* ovo sam stavio da bi linkovi promjenili boju kada predjem kursorom preko njih */
+.heder a:hover{
+color:  var(--glavna-boja);
+}
+/* ovo sam stavio da stilizujem futer*/
+.futer
+{
+    background-color: var(--futer-bg);
+    text-align: center;
+    color: var(--futer-tekst);
+    
+}
+/* ovo sam stavio da uredim linove u futeru */
+.futer a
+{
+    text-decoration-style: none;
+    color: var(--futer-tekst);
+    margin: 5px;
+}
+/* ovo sam stavio da bi istaknuo svoje ime drugim fontom*/
+.autor
+{
+  font-family: "Instrument Serif", serif;
+  font-weight: 1000;
+  font-style: italic;
+  font-size: large;
+}
+.naslovinainfo {
+ font-family: "Bungee", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: xx-large;
+  text-align: center;
+  justify-content: center;
+}
+.clanakslika {
+    display: block; /* Promijeni sa flex na block radi lakšeg centriranja */
+    max-width: 100%; /* Ovo sprečava da slika bude šira od ekrana telefona */
+    width: 700px; /* Maksimalna širina na kompjuteru */
+    height: auto; /* Veoma važno: auto održava proporcije slike da se ne izduži */
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+.informacije
+{
+    background-color: var(--glavna-boja);
+    padding: 2.5%;
+    margin: 1%;
+    border-radius: 20px;
+    color: var(--boja-teksta-svetla)
+}
+    </style>
+   <link rel="icon" type="image" href="Picsart_26-04-02_23-52-52-619.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heder pisacam">
+        <a href="tech.html"><h1>Retro tech magazin</h1></a>
+        <ul>
+           <li><a href="onama.html">O nama</a></li>
+            <li><a href="ponuda.html">Ponuda</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+        </ul>
+    </div>
+    <br>
+    <h2 class="naslovinainfo">Galerija</h2>
+    <br>
+ <div class="pisacam informacije">
+    <img class="clanakslika" src="https://tweakers.net/ext/i/2007309608.png" alt="winap">
+    <br>
+    <img class="clanakslika" src="https://www.copetti.org/images/consoles/ps3/original.ef1da38ba374252ffbad5d6c30133170973f1acb33b542ff36f2f525a8d4ef3d.png" alt="psp">
+   <br>
+    <img class="clanakslika" src="https://static.wikia.nocookie.net/playstation/images/5/5d/Sony-PSP-1000-Body.png/revision/latest?cb=20140831172947" alt="psp">
+   <br>
+    <img class="clanakslika" src="Wii-Console.png" alt="psp">
+   <br>
+    <img class="clanakslika" src="https://techgage.com/wp-content/uploads/2014/04/Microsoft-Windows-XP-Flag-Logo.png" alt="psp">
+   <br>
+    <img class="clanakslika" src="https://bigdatasupplyinc.com/wp-content/uploads/2022/02/corporate-desktops.png" alt="psp">
+   <br>
+    <img class="clanakslika" src="https://icons.veryicon.com/png/o/miscellaneous/feather-v423/bluetooth-57.png" alt="psp">
+    </div>
+     </div>
+    <div class="futer pisacam">
+    <br>
+    <h1>Autor: Stefan Sedlić</h1>
+    <p>linkovi ka mojim drustvenim mrežama:</p>
+    <a href="https://www.instagram.com/">instagram</a>
+    <a href="https://www.facebook.com/">facebook</a>
+    <a href="https://www.tiktok.com/">tiktok</a>
+    <a href="https://www.x.com/">twitter/x</a>
+    <p class="naslovinainfo" style="font-size: small;">© Stefan Sedlić 2026</p>
+    </div>
+</body>
+</html>

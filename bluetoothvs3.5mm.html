@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluetooth ili 3.5mm: evo sta dobivate a sta gubite prelaskom na Bluetooth </title>
+    <style>
+        /* ovo sam jer tako pise u uputstvu i pravilim prma kojim parim ovaj web a služi da prilagodim boje*/
+:root{
+--glavna-boja: rgb(173, 167, 134); /* ovo sam stavio da jer mi je ova boja glavna pa da je mogu dodati sa --glavna-boja a ne da svaki put pisem adresu ove boje*/
+--boja-teksta-svetla: aliceblue;
+--boja-teksta-tamna: black;
+--futer-bg: rgb(0, 0, 0);
+--futer-tekst: rgb(255, 255, 255);
+--senka-boja: rgb(70, 67, 40);
+}
+/* ovo sam stavio radi fonta da bude u stilu pisace masine */
+.pisacam {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+/* ovo sam otvorio class heder da bi logotip i linkovi bili u istoj ravni */
+.heder
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 5%;
+    box-shadow: 0px 16px 32px var(--glavna-boja);
+}
+/* ovo sam stavio da bi logo veb-sajta bio lijevo */
+.heder a
+{
+    flex: 1;
+}
+/* ovo sam stavio da bi linkovi koji vode o informacija o sajtu bili desno*/
+.heder ul
+{
+    flex: 0.30;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; /* ovo sam stavio da uklonim tacke prije liste radi estetike */
+    font-size: x-large;
+    padding: auto;
+    gap: 20px; /* ovo sam stavio da stavke sa liste budu odvojene jedna od druge*/
+    margin: 20px;
+}
+/* ovo sam stavio da linovi nemaju crtispod i da su crni*/
+.heder a{
+text-decoration: none; /* ovo sam stavio da linkovi nemaju crtu ispod i to sam uradio radi estetike sajta*/
+color: var(--boja-teksta-tamna); 
+}
+/* ovo sam stavio da bi linkovi promjenili boju kada predjem kursorom preko njih */
+.heder a:hover{
+color:  var(--glavna-boja);
+}
+/* ovo sam stavio da stilizujem futer*/
+.futer
+{
+    background-color: var(--futer-bg);
+    text-align: center;
+    color: var(--futer-tekst);
+    
+}
+/* ovo sam stavio da uredim linove u futeru */
+.futer a
+{
+    text-decoration-style: none;
+    color: var(--futer-tekst);
+    margin: 5px;
+}
+/* ovo sam stavio da bi istaknuo svoje ime drugim fontom*/
+.autor
+{
+  font-family: "Instrument Serif", serif;
+  font-weight: 1000;
+  font-style: italic;
+  font-size: large;
+}
+.naslovinainfo {
+ font-family: "Bungee", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: xx-large;
+  text-align: center;
+  justify-content: center;
+}
+.clanakslika
+{
+    display: flex;
+    max-width: 100%; /* Ovo sprečava da slika bude šira od ekrana telefona */
+    width: 400px; /* Maksimalna širina na kompjuteru */
+    height: auto; /* Veoma važno: auto održava proporcije slike da se ne izduži */
+    object-fit: contain; /* ovo sam stavio da se slike prilagode boxu*/
+    object-position: center; /* ovo sam stavio da se slike centriraju */
+    margin-left: auto;  /* ovo sam stavio da stranica sam odredi koliko treba koliko treba margine sa lijeve strane da slika bude centrirana */
+    margin-right: auto;  /* isto to samo za desno*/
+}
+.informacije
+{
+    background-color: var(--glavna-boja);
+    padding: 2.5%;
+    margin: 1%;
+    border-radius: 20px;
+    color: var(--boja-teksta-svetla)
+}
+    </style>
+   <link rel="icon" type="image" href="Picsart_26-04-02_23-52-52-619.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heder pisacam">
+        <a href="tech.html"><h1>Retro tech magazin</h1></a>
+        <ul>
+           <li><a href="onama.html">O nama</a></li>
+            <li><a href="ponuda.html">Ponuda</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+        </ul>
+    </div>
+    <br>
+    <img class="clanakslika" src="https://icons.veryicon.com/png/o/miscellaneous/feather-v423/bluetooth-57.png" alt="psp">
+<div class="pisacam informacije">
+    <h2 class="naslovinainfo">Bluetooth ili 3.5mm: evo sta dobivate a sta gubite prelaskom na Bluetooth </h2>
+    <p>Uklanjanje klasičnog ulaza za slušalice sa modernih telefona natjeralo nas je na brzu adaptaciju. Dok proizvođači forsiraju bežičnu budućnost, mi koji volimo retro tehnologiju i čist zvuk znamo da <strong>3.5mm džek</strong> i dalje ima svoje vjerne obožavaoce. Pitanje je jednostavno: da li je udobnost vrijedna gubitka kvaliteta?</p>
+
+    <p>Glavna prednost Bluetooth tehnologije je, naravno, <strong>bežična sloboda</strong>. Nema više zamršenih kablova u džepu ili straha da ćete zakačiti žicu dok trenirate ili se krećete. Moderni kodeci su smanjili kašnjenje zvuka, čineći ih dobrim za svakodnevnu upotrebu i razgovore u pokretu.</p>
+
+    <p>Međutim, prelaskom na Bluetooth dobijate komfor, ali gubite nekoliko ključnih stvari koje nudi stari dobri kabl:</p>
+
+    <ol>
+        <li><strong>Kvalitet zvuka bez kompresije:</strong> Za audiofile, kabl je nezamjenjiv. 3.5mm veza pruža analogni zvuk bez digitalne kompresije, što znači puniji i detaljniji doživljaj muzike koji Bluetooth još uvijek ne može u potpunosti da isprati.</li>
+        <li><strong>Problem sa baterijom:</strong> Bluetooth slušalice stalno traže punjač. Sa 3.5mm slušalicama nemate taj stres – one su uvijek spremne za rad i troše minimalno baterije vašeg uređaja.</li>
+        <li><strong>Dugovječnost opreme:</strong> Bluetooth slušalice imaju ugrađene baterije koje će nakon par godina oslabiti. Klasične žičane slušalice, ako se čuvaju, mogu trajati decenijama i raditi na bilo čemu, od starog Winampa na Pentiumu do modernog laptopa.</li>
+        <li><strong>Jednostavnost (Plug & Play):</strong> Nema uparivanja, nema prekidanja veze i nema smetnji u prepunom busu. Samo uključiš i slušaš.</li>
+    </ol>
+
+    <p>Korišćenjem Bluetooth-a riješili biste se muka sa kablovima, ali biste prihvatili zavisnost od punjača i "clouda". Baš kao što smo pričali za <strong>Winamp</strong> i lokalne MP3 kolekcije, kabl vam daje tu neku vrstu digitalne nezavisnosti i sigurnosti u kvalitet.</p>
+
+    <p>Na kraju se postavlja logičko pitanje: da li je zaista vrijedno plaćati skupe bežične modele koji će za tri godine biti otpad, ili je bolje držati se provjerenog 3.5mm standarda? Ako vam je bitna udobnost, Bluetooth pobjeđuje, ali ako cijenite čist zvuk i opremu koja traje – stari dobri džek je i dalje kralj.</p>
+  </div>
+    <div class="futer pisacam">
+    <br>
+    <h1>Autor: Stefan Sedlić</h1>
+    <p>linkovi ka mojim drustvenim mrežama:</p>
+    <a href="https://www.instagram.com/">instagram</a>
+    <a href="https://www.facebook.com/">facebook</a>
+    <a href="https://www.tiktok.com/">tiktok</a>
+    <a href="https://www.x.com/">twitter/x</a>
+    <p class="naslovinainfo" style="font-size: small;">© Stefan Sedlić 2026</p>
+    </div>
+</body>
+</html>
